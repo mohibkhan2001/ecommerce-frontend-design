@@ -38,5 +38,18 @@
         height: 40px;
         width: 38px;
     }
+   .product-grid, .overlay button{
+    display: none !important;
+   }
+   .homeNoutdoor > div, .homeNoutdoor2 > div{
+    border-bottom: 1px solid lightgray;
+   }
+   .section-info span, #contact-suppliers{
+    display: none;
+
+   }
+   .section-info > button{
+    display: block;
+   }
 }
 
