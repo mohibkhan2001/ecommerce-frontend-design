@@ -32,9 +32,7 @@
       </button>
 
       <!-- Logo -->
-      <div
-        class="flex items-center space-x-2 text-blue-600 font-bold text-xl ml-3 sm:ml-6"
-      >
+      <a href="/public/home.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl ml-3 sm:ml-6">
         <div class="bg-blue-100 p-2 rounded-lg">
           <img
             src="/public/Assets/user-options/logo-symbol.png"
@@ -43,7 +41,8 @@
           />
         </div>
         <span class="text-2xl sm:text-3xl">Brand</span>
-      </div>
+      </a>
+      
 
       <!-- Search Bar (Only for Larger Screens) -->
       <div class="hidden md:flex flex-1 justify-center px-20">
@@ -250,8 +249,9 @@
 
         <!-- Left Sidebar (Hidden on mobile) -->
         <div class="w-[23%] hidden sm:flex overflow-hidden">
-            <ul class="space-y-1 text-gray-700 text-base w-full">
+            <ul class="space-y-1 text-gray-700 text-base">
                 <li class="bg-blue-100 text-blue-600 font-semibold p-2 rounded-lg">Automobiles</li>
+                <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer"><a href="/public/products-list.html">Mobile accessory</a></li>
                 <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer">Clothes and wear</li>
                 <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer">Home interiors</li>
                 <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer">Computer and tech</li>

@@ -40,3 +40,11 @@
     }
 
     startCountdown(5 * 24 * 60 * 60); // Set countdown for 5 days
+
+
+
+    // Js code for toggle functionality of categories buttons
+
+
+
+

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <header
+      class="w-full h-20 flex items-center px-4 sm:px-20 border-b shadow-sm bg-white px-20"
+    >
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="block md:hidden">
+        <img
+          src="/public/Assets/user-options/menu.png"
+          alt="Menu"
+          class="h-3"
+        />
+      </button>
+
+      <!-- Logo -->
+      <div
+        class="flex items-center space-x-2 text-blue-600 font-bold text-xl ml-3 sm:ml-6"
+      >
+        <div class="bg-blue-100 p-2 rounded-lg">
+          <img
+            src="/public/Assets/user-options/logo-symbol.png"
+            alt="Brand Logo"
+            class="h-6"
+          />
+        </div>
+        <span class="text-2xl sm:text-3xl">Brand</span>
+      </div>
+
+      <!-- Search Bar (Only for Larger Screens) -->
+      <div class="hidden md:flex flex-1 justify-center px-20">
+        <div
+          class="flex border-2 border-blue-500 rounded-lg overflow-hidden w-full max-w-xl"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="p-2 w-full outline-none border-none"
+          />
+          <select class="border-l px-2 text-gray-600 hidden md:block">
+            <option>All category</option>
+          </select>
+          <button class="bg-blue-600 text-white px-4 border-l border-blue-500">
+            Search
+          </button>
+        </div>
+      </div>
+
+      <!-- User Actions -->
+      <div class="hidden md:flex items-center space-x-4 text-gray-600">
+        <div class="flex flex-col items-center text-sm">
+          <img
+            src="/public/Assets/user-options/profile.png"
+            alt="Profile"
+            class="h-5"
+          />
+          <span>Profile</span>
+        </div>
+        <div class="flex flex-col items-center text-sm">
+          <img
+            src="/public/Assets/user-options/message.png"
+            alt="Message"
+            class="h-5"
+          />
+          <span>Message</span>
+        </div>
+        <div class="flex flex-col items-center text-sm">
+          <img
+            src="/public/Assets/user-options/heart.png"
+            alt="Orders"
+            class="h-5"
+          />
+          <span>Orders</span>
+        </div>
+        <div class="flex flex-col items-center text-sm">
+          <img
+            src="/public/Assets/user-options/cart.png"
+            alt="Cart"
+            class="h-5"
+          />
+          <span>My cart</span>
+        </div>
+      </div>
+
+      <!-- Mobile Cart & Profile (Aligned to Right) -->
+      <div class="md:hidden flex items-center space-x-4 ml-auto">
+        <img
+          src="/public/Assets/user-options/cart.png"
+          alt="Cart"
+          class="h-6"
+        />
+        <img
+          src="/public/Assets/user-options/profile.png"
+          alt="Profile"
+          class="h-6"
+        />
+      </div>
+    </header>
+
+
+    <!-- Navigation Bar -->
+    <nav
+      class="hidden md:flex w-full items-center justify-between px-6 py-2 text-gray-700 border-b"
+    >
+      <div
+        class="flex space-x-4 font-semibold text-md ml-20 overflow-x-auto md:overflow-visible whitespace-nowrap"
+      >
+        <button class="flex items-center space-x-5">
+          <img
+            src="/public/Assets/user-options/menu.png"
+            alt="Menu"
+            class="h-4"
+          />
+          <span>All category</span>
+        </button>
+        <a href="#">Hot offers</a>
+        <a href="#">Gift boxes</a>
+        <a href="#">Projects</a>
+        <a href="#">Menu item</a>
+        <div class="relative">
+          <button class="flex items-center space-x-1">
+            <span>Help</span>
+            <img
+              src="/public/Assets/user-options/down-arrow.png"
+              alt="▼"
+              class="h-3"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-4 text-sm font-semibold">
+        <select class="text-gray-600">
+          <option>English, USD</option>
+        </select>
+        <div class="flex items-center space-x-1">
+          <span>Ship to</span>
+          <img
+            src="/public/Assets/user-options/flag.png"
+            alt="DE"
+            class="h-4"
+          />
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Header -->
+  <div class="bg-white border-b px-[102px]">
+    <nav class="flex items-center space-x-2 text-sm text-gray-600">
+      <a href="#" class="hover:text-blue-500">Home</a>
+      <span>/</span>
+      <a href="#" class="hover:text-blue-500">Clothing</a>
+      <span>/</span>
+      <a href="#" class="hover:text-blue-500">Men's Wear</a>
+      <span>/</span>
+      <a href="#" class="hover:text-blue-500">Summer Clothing</a>
+    </nav>
+  </div>
+
+  <div class="container mx-auto px-4 mt-4 flex gap-6">
+    <!-- Sidebar -->
+    <aside class="w-full bg-white p-4 mx-10">
+      <!-- Category -->
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">Category</h3>
+        <ul class="space-y-1 ">
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Mobile accessory</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Electronics</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Smartphones</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Home items</a></li>
+          <li><a href="#" class="text-blue-500">See all</a></li>
+        </ul>
+      </div>
+
+      <!-- Brand -->
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">Brands</h3>
+        <ul class="space-y-1">
+          <li><input type="checkbox" id="samsung" /> <label for="samsung">Samsung</label></li>
+          <li><input type="checkbox" id="apple" /> <label for="apple">Apple</label></li>
+          <li><input type="checkbox" id="lenovo" /> <label for="lenovo">Lenovo</label></li>
+          <li><input type="checkbox" id="oppo" /> <label for="oppo">Oppo</label></li>
+          <li><a href="#" class="text-blue-500">See all</a></li>
+        </ul>
+      </div>
+
+      <!-- Features -->
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">Features</h3>
+        <ul class="space-y-1">
+          <li><input type="checkbox" id="plastic-case" /> <label for="plastic-case">Plastic case</label></li>
+          <li><input type="checkbox" id="waterproof" /> <label for="waterproof">Waterproof</label></li>
+          <li><input type="checkbox" id="magnetic" /> <label for="magnetic">Magnetic</label></li>
+          <li><input type="checkbox" id="shockproof" /> <label for="shockproof">Shockproof</label></li>
+        </ul>
+      </div>
+
+      <!-- Price Range -->
+      <div class="mb-6">
+        <h3 class="font-semibold mb-2">Price range</h3>
+        <input type="range" class="w-full" />
+        <div class="flex justify-between text-sm mt-1">
+          <span>$10</span>
+          <span>$1000</span>
+        </div>
+        <button class="w-full bg-blue-500 text-white py-1 rounded-md mt-2">Apply</button>
+      </div>
+
+      <!-- Condition -->
+      <div>
+        <h3 class="font-semibold mb-2">Condition</h3>
+        <ul class="space-y-1">
+          <li><input type="checkbox" id="new" /> <label for="new">New</label></li>
+          <li><input type="checkbox" id="refurbished" /> <label for="refurbished">Refurbished</label></li>
+          <li><input type="checkbox" id="used" /> <label for="used">Used</label></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Product Listing -->
+    <div class="w-3/4">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <p class="text-gray-600 text-sm">12,911 items in <span class="font-semibold">Mobile accessory</span></p>
+        </div>
+        <div class="flex space-x-4">
+          <button class="border px-4 py-1 rounded-md text-gray-600">Verified only</button>
+          <button class="border px-4 py-1 rounded-md text-gray-600">Featured</button>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="space-y-4">
+        <!-- Single Product -->
+        <div class="flex border bg-white p-4 rounded-md w-[900px]">
+          <img src="https://via.placeholder.com/100" alt="Product" class="w-24 h-24 rounded-md" />
+          <div class="ml-4">
+            <h3 class="font-semibold text-gray-800">Canon Camera EOS 600D, Black 18x zoom</h3>
+            <div class="text-orange-500 font-bold mt-1">$998.00 <span class="line-through text-gray-400 ml-2">$1080.00</span></div>
+            <div class="text-sm text-gray-500 mt-1">
+              ★★★★☆ 156 reviews • <span class="text-green-500">Free Shipping</span>
+            </div>
+            <p class="text-gray-500 text-sm mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="text-blue-500 text-sm mt-2 block">View details</a>
+          </div>
+          <button class="ml-auto"><span class="text-gray-400">♡</span></button>
+        </div>
+
+        <!-- Repeat Product (Example) -->
+        <div class="flex border bg-white p-4 rounded-md">
+          <img src="https://via.placeholder.com/100" alt="Product" class="w-24 h-24 rounded-md" />
+          <div class="ml-4">
+            <h3 class="font-semibold text-gray-800">GoPro HERO8 4K Action Camera - Black</h3>
+            <div class="text-orange-500 font-bold mt-1">$998.00</div>
+            <div class="text-sm text-gray-500 mt-1">
+              ★★★★☆ 156 reviews • <span class="text-green-500">Free Shipping</span>
+            </div>
+            <p class="text-gray-500 text-sm mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <a href="#" class="text-blue-500 text-sm mt-2 block">View details</a>
+          </div>
+          <button class="ml-auto"><span class="text-gray-400">♡</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
