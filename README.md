@@ -2,6 +2,8 @@
 
 ![thumbnail](https://github.com/user-attachments/assets/40b0722f-38f6-455e-9645-e546e8e38025)
 
+## 🚀 Live Demo
+🔗 **[View Live Site](https://ecommerce-store-mohib-khan.netlify.app/)**
 
 
 ## 📌 Objective  
