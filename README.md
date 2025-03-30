@@ -1,5 +1,8 @@
 # 🛒 Ecommerce Web Design  
 
+![image](https://github.com/user-attachments/assets/50e6931f-fe14-4554-a828-dbe1c161c0de)
+
+
 ## 📌 Objective  
 This project focuses on designing and implementing a **fully responsive eCommerce web page** based on the provided Figma design. The goal was to apply **core frontend development skills**, including **HTML, CSS, and JavaScript**, to create an intuitive shopping experience across **desktop, tablet, and mobile devices**.  
 
