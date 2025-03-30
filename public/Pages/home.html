@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/Pages/stylesheet/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +32,7 @@
       </button>
 
       <!-- Logo -->
-      <a href="/public/home.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl ml-3 sm:ml-6">
+      <a href="/public/Pages/home.html" class="flex items-center space-x-2 text-blue-600 font-bold text-xl ml-3 sm:ml-6">
         <div class="bg-blue-100 p-2 rounded-lg">
           <img
             src="/public/Assets/user-options/logo-symbol.png"
@@ -90,12 +90,14 @@
           <span>Orders</span>
         </div>
         <div class="flex flex-col items-center text-sm">
+          <a href="/public/Pages/Cart.html" class="flex flex-col justify-center items-center">
           <img
             src="/public/Assets/user-options/cart.png"
             alt="Cart"
             class="h-5"
           />
           <span>My cart</span>
+        </a>
         </div>
       </div>
 
@@ -251,7 +253,7 @@
         <div class="w-[23%] hidden sm:flex overflow-hidden">
             <ul class="space-y-1 text-gray-700 text-base">
                 <li class="bg-blue-100 text-blue-600 font-semibold p-2 rounded-lg">Automobiles</li>
-                <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer"><a href="/public/products-list.html">Mobile accessory</a></li>
+                <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer"><a href="/public/Pages/products-list.html">Mobile accessory</a></li>
                 <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer">Clothes and wear</li>
                 <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer">Home interiors</li>
                 <li class="p-2 hover:bg-gray-100 rounded-lg cursor-pointer">Computer and tech</li>
@@ -1090,6 +1092,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/public/Pages/Javascript/script.js"></script>
   </body>
 </html>

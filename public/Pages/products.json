@@ -1,0 +1,115 @@
+[
+    {
+      "id": 1,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/2.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+
+      
+    },
+    {
+      "id": 2,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/3.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+
+    },
+    {
+      "id": 3,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/4.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+
+    },
+    {
+      "id": 4,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/5.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+    },
+    {
+      "id": 5,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/6.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+    },
+    {
+      "id": 6,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/7.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+    },
+    {
+      "id": 7,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/8.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+    },
+    {
+      "id": 8,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/9.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+    },
+    {
+      "id": 9,
+      "name": "Canon Camera EOS 2000, Black 10x zoom",
+      "image": "/public/Assets/tech/1.jpg",
+      "price": 998.00,
+      "originalPrice": 1128.00,
+      "rating": 4.0,
+      "reviews": 7.5,
+      "orders": 154,
+      "freeShipping": true,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste vel aspernatur aperiam in molestiae reiciendis, impedit deleniti consequuntur, eius, voluptates delectus esse ut tempora cumque harum fuga necessitatibus facilis voluptatum. Reprehenderit molestias velit architecto expedita nemo quas cumque ab non nam pariatur veniam, sit maxime corrupti dolorem sunt odio dicta!"
+    }
+  ]
+  

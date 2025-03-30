@@ -32,7 +32,7 @@
     }
 
     @media (max-width:768px){
-        #desktop-header, #desktop-nav, #selected-category, aside, #filter-desktop, .product p, .product button, .product a{
+        #desktop-header, #desktop-nav, #selected-category, aside, #filter-desktop, .product p, .product button{
             display: none;
         }
         #mobile-header{
@@ -206,12 +206,14 @@
         <span>Orders</span>
       </div>
       <div class="flex flex-col items-center text-sm">
-        <img
-          src="/public/Assets/user-options/cart.png"
-          alt="Cart"
-          class="h-5"
-        />
-        <span>My cart</span>
+        <a href="/public/Pages/Cart.html" class="flex flex-col justify-center items-center">
+          <img
+            src="/public/Assets/user-options/cart.png"
+            alt="Cart"
+            class="h-5"
+          />
+          <span>My cart</span>
+        </a>
       </div>
     </div>
 
@@ -236,7 +238,7 @@
     <div class="flex justify-between items-center w-full">
       <!-- Left side -->
       <div class="flex items-center space-x-2">
-        <a href="/public/home.html">
+        <a href="/public/Pages/home.html">
           <img src="/public/Assets/user-options/back.png" alt="Back" class="h-5">
         </a>
         <span class="font-semibold text-gray-800">Mobile accessory</span>
@@ -332,7 +334,7 @@
   <!-- header for current selected category (e.g. Mobile accessory) -->
   <div class=" pl-20 h-[64px] flex" id="selected-category">
     <nav class="flex items-center space-x-2 text-sm text-[#8B96A5]">
-      <a href="/public/home.html" class="hover:text-blue-500">Home</a>
+      <a href="/public/Pages/home.html" class="hover:text-blue-500">Home</a>
       <span> > </span>
       <a href="#" class="hover:text-blue-500">Clothing</a>
       <span>></span>
@@ -556,7 +558,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
            
-            <a href="product-details.html?id=1" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=1" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
 
         </div>
     
@@ -591,7 +593,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=2" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=2" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -625,7 +627,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=3" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=3" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -659,7 +661,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=4" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=4" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -693,7 +695,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=5" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=5" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -727,7 +729,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=6" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=6" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -761,7 +763,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=7" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=7" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -795,7 +797,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=8" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=8" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -829,7 +831,7 @@
             <p class="text-gray-500 text-sm mt-2 w-[70%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <a href="product-details.html?id=9" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
+            <a href="/public/Pages/product-details.html?id=9" class="text-blue-500 text-sm font-medium mt-2 inline-block">View details</a>
         </div>
     
         <!-- Heart Icon at Top Right -->
@@ -1009,7 +1011,7 @@
     </div>
   </footer>
 
-  <script src="/public/product-list.js"></script>
+  <script src="/public/Pages/Javascript/product-list.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
