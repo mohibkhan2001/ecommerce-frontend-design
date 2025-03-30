@@ -24,12 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let shortDesc = item.description.length > 100 ? item.description.substring(0, 100) + "..." : item.description;
         
         let itemDiv = document.createElement("div");
-        itemDiv.classList.add("flex", "items-center", "p-4", "border-b", "rounded-lg", "bg-white", "shadow-sm", "gap-4");
-
-        itemDiv.classList.add(
-            "flex", "items-center", "p-4", "border-b", "rounded-lg", 
-            "bg-white", "shadow-sm", "gap-4", "flex-col", "md:flex-row"
-        );
+        itemDiv.classList.add("flex", "items-center", "p-4", "border-b", "rounded-lg", "bg-white", "shadow-sm", "gap-4", "flex-col", "md:flex-row");
         
         itemDiv.innerHTML = `
             <div class="flex items-center gap-4 w-full">
@@ -45,32 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             
             <div class="flex items-center justify-between w-full md:w-auto">
-                <div class="flex items-center border rounded px-2">
-                    <button class="text-lg px-2">−</button>
-                    <span class="px-2">${item.quantity}</span>
-                    <button class="text-lg px-2">+</button>
+                <div class="flex items-center border rounded px-2 quantity-container">
+                    <button class="text-lg px-2 md:hidden decrease-btn" data-id="${item.id}">−</button>
+                    <span class="px-2 md:hidden">${item.quantity}</span>
+                    <button class="text-lg px-2 md:hidden increase-btn" data-id="${item.id}">+</button>
+                    <select class="hidden md:block quantity-selector border rounded px-2 py-1" data-id="${item.id}">
+                        ${[...Array(10).keys()].map(i => `<option value="${i+1}" ${item.quantity == i+1 ? 'selected' : ''}>${i+1}</option>`).join('')}
+                    </select>
                 </div>
                 <p class="font-semibold text-lg">$${(item.price * item.quantity).toFixed(2)}</p>
             </div>
         `;
-        
-
         cartContainer.appendChild(itemDiv);
-    });
-
-    // Fix: See More & See Less functionality
-    document.querySelectorAll(".see-more").forEach(button => {
-        button.addEventListener("click", function () {
-            let descElement = this.previousElementSibling;
-            let fullText = descElement.dataset.full;
-            if (this.textContent === "See More") {
-                descElement.textContent = fullText;
-                this.textContent = "See Less";
-            } else {
-                descElement.textContent = fullText.substring(0, 100) + "...";
-                this.textContent = "See More";
-            }
-        });
     });
 
     // Apply Discounts & Taxes
@@ -83,22 +64,31 @@ document.addEventListener("DOMContentLoaded", function () {
     taxElement.textContent = `+$${tax.toFixed(2)}`;
     totalElement.textContent = `$${total.toFixed(2)}`;
 
-    // Remove item from cart
-    document.querySelectorAll(".remove-btn").forEach(button => {
-        button.addEventListener("click", function () {
-            const itemId = this.dataset.id;
-            cartItems = cartItems.filter(item => item.id != itemId);
-            localStorage.setItem("cart", JSON.stringify(cartItems));
-            location.reload();
-        });
-    });
-
-    // Update quantity
+    // Update quantity using dropdown for desktop
     document.querySelectorAll(".quantity-selector").forEach(select => {
         select.addEventListener("change", function () {
             const itemId = this.dataset.id;
             const newQuantity = parseInt(this.value);
             cartItems = cartItems.map(item => item.id == itemId ? { ...item, quantity: newQuantity } : item);
+            localStorage.setItem("cart", JSON.stringify(cartItems));
+            location.reload();
+        });
+    });
+
+    // Update quantity using buttons for mobile
+    document.querySelectorAll(".increase-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            const itemId = this.dataset.id;
+            cartItems = cartItems.map(item => item.id == itemId ? { ...item, quantity: item.quantity + 1 } : item);
+            localStorage.setItem("cart", JSON.stringify(cartItems));
+            location.reload();
+        });
+    });
+    
+    document.querySelectorAll(".decrease-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            const itemId = this.dataset.id;
+            cartItems = cartItems.map(item => item.id == itemId && item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : item);
             localStorage.setItem("cart", JSON.stringify(cartItems));
             location.reload();
         });
