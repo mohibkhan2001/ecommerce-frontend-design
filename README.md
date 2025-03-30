@@ -1,6 +1,7 @@
 # 🛒 Ecommerce Web Design  
 
-![image](https://github.com/user-attachments/assets/50e6931f-fe14-4554-a828-dbe1c161c0de)
+![thumbnail](https://github.com/user-attachments/assets/40b0722f-38f6-455e-9645-e546e8e38025)
+
 
 
 ## 📌 Objective  
